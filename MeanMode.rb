@@ -1,0 +1,15 @@
+def MeanMode(arr)
+
+  # code goes here
+  for i in 0..arr.length-1
+    for j in i+1..arr.length
+      if (arr[i] == arr[j])
+        return 1
+      end
+      j += 1
+    end
+    i += 1
+  end
+  return 0
+         
+end
